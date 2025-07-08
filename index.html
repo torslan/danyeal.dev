@@ -1,43 +1,90 @@
-<!-- public_html/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniel Beckman | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 2em;
+    header {
+      background: #0078D7;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
     .section {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    a.download-link {
+    h2 {
+      font-size: 1.5em;
+      color: #0078D7;
+      border-bottom: 2px solid #0078D7;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+    a {
+      color: #0078D7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .download-link {
+      display: inline-block;
       background-color: #0078D7;
       color: white;
-      padding: 10px 15px;
+      padding: 12px 20px;
       text-decoration: none;
       border-radius: 5px;
+      margin-top: 10px;
     }
-    a.download-link:hover {
+    .download-link:hover {
       background-color: #005fa3;
+    }
+    .contact p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
 
+<header>
   <h1>Daniel Beckman</h1>
-  <p><strong>Email:</strong> dan@danyeal.dev<br>
-     <strong>GitHub:</strong> <a href="https://github.com/torslan">torslan</a><br>
-     <strong>LinkedIn:</strong> <a href="www.linkedin.com/in/danieljbeckman">https://www.linkedin.com/in/danieljbeckman/</a><br>
-     <strong>Phone:</strong> (650) 438-0677<br>
-     <strong>Location:</strong> Pacifica, CA</p>
+  <p>Quality Engineer · Automation Enthusiast · Bluetooth & Wi-Fi Tester</p>
+</header>
+
+<main>
+  <div class="section contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> dan@danyeal.dev</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/torslan" target="_blank">torslan</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danieljbeckman" target="_blank">danieljbeckman</a></p>
+    <p><strong>Phone:</strong> (650) 438-0677</p>
+    <p><strong>Location:</strong> Pacifica, CA</p>
+  </div>
 
   <div class="section">
     <h2>Summary</h2>
@@ -55,9 +102,13 @@
   </div>
 
   <div class="section">
-    <h2>Resume</h2>
-    <a class="download-link" href="resume.pdf" download>Download My Resume (PDF)</a>
+    <h2>Downloadable Documents</h2>
+    <p><a class="download-link" href="Daniel_Beckman_Resume.pdf" download>Download Resume (PDF)</a></p>
+    <p><a class="download-link" href="Letter_of_Recommendation_Bryant.pdf" download>Letter of Rec – Bryant Espinoza</a></p>
+    <p><a class="download-link" href="Letter_of_Recommendation_Vlad.pdf" download>Letter of Rec – Vlad Uilecan</a></p>
   </div>
+</main>
 
 </body>
 </html>
+
